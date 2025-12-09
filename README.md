@@ -7,6 +7,7 @@ A collection of VS Code prompt templates for AL (Application Language) developme
 | Prompt | Description | Recommended Model |
 |--------|-------------|-------------------|
 | [al-docs-code.prompt.md](al-docs-code.prompt.md) | Create comprehensive business-focused documentation for AL code | Claude Haiku 4.5 |
+| [al-refactor-code.prompt.md](al-refactor-code.prompt.md) | Review and refactor AL code for quality, security, performance, and maintainability | Claude Sonnet 4.5 |
 | [al-review-code.prompt.md](al-review-code.prompt.md) | Review and refactor AL code for quality, security, performance, and maintainability | Claude Sonnet 4.5 |
 | [al-unit-tests.prompt.md](al-unit-tests.prompt.md) | Generate unit tests for AL procedures with Given-When-Then structure | Claude Sonnet 4.5 |
 
@@ -39,6 +40,35 @@ Generates business-focused documentation for AL code. This prompt helps translat
 - Implementation Details
 - User Impact
 - Results/Outputs with examples
+
+---
+
+### 🔧 AL Code Refactor
+
+**File:** `al-refactor-code.prompt.md`
+
+Reviews and refactors AL code focusing on quality, security, performance, and maintainability with automated code improvements.
+
+**Review Areas:**
+- Reuse of existing Business Central objects instead of duplicating
+- Security: permissions, input handling, and secure patterns
+- Code cleanup: redundant logic, unused variables, and placeholders
+- Magic numbers: replace with constants, enums, or setup tables
+- Performance optimization: set-based operations, queries, avoid unnecessary loops
+- Best practices: naming conventions, events, and extensibility
+- Error handling where failures may occur
+- Modular, testable, and maintainable design
+
+**Output includes:**
+- Refactored code block with improvements
+- Summary of key improvements grouped by category
+- Assumptions made due to missing context
+- Suggested next steps if further information is needed
+
+**Input handling:**
+- Direct AL code snippets
+- File paths (e.g., "src/Codeunit/MyCodeunit.al" or "c:\path\to\file.al")
+- Folder paths containing .al files (e.g., "src/" or "c:\path\to\folder")
 
 ---
 

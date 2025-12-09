@@ -75,5 +75,5 @@ If folder path provided:
 - Analyze each file for testable procedures
 - Generate tests for all procedures found
 
-## Code to test
-Focus on: [Provided code text, file path, or folder path here] 
+## What to document
+Focus on provided text, code, direct file path, or folder path with multiple files that follows. 

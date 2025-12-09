@@ -38,6 +38,7 @@ Only elaborate or ask Y/N questions if needed for accuracy.
 Wrap analysis in <procedure_analysis> tags.
 Format all tests clearly per the Given-When-Then template.
 If you encounter infinite loops or get stuck without progress, pause and reassess your strategy. Explore alternative methods or seek clarification if needed.
+Less is more, do not over-engineer.
 
 ## Output Structure
 
@@ -71,5 +72,5 @@ If folder path provided:
 - Analyze each file for testable procedures
 - Generate tests for all procedures found
 
-## Code to test
-Focus on: [Provided code text, file path, or folder path here] 
+## What to test
+Focus on provided text, code, direct file path, or folder path with multiple files that follows. 
