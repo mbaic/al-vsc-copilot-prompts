@@ -138,4 +138,4 @@ Focus on: [Provided code text, file path, or folder path here]
 
 ## License
 
-See [LICENSE](LICENSE) for details.
+MIT
