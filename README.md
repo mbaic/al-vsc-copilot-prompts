@@ -2,14 +2,16 @@
 
 A collection of VS Code prompt templates for AL (Application Language) development in Microsoft Dynamics 365 Business Central. These prompts are designed to be used with GitHub Copilot agents in VS Code to streamline common AL development tasks.
 
+> **Note:** These are demonstration prompts — published to share the concept and approach, not as production-ready templates. They reflect how I structure Copilot agent prompts in my own AL development workflow. Use them as a starting point and adapt to your team's standards and needs.
+
 ## Available Prompts
 
 | Prompt | Description | Recommended Model |
 |--------|-------------|-------------------|
 | [al-docs-code.prompt.md](al-docs-code.prompt.md) | Create comprehensive business-focused documentation for AL code | Claude Haiku 4.5 |
-| [al-refactor-code.prompt.md](al-refactor-code.prompt.md) | Review and refactor AL code for quality, security, performance, and maintainability | Claude Sonnet 4.5 |
-| [al-review-code.prompt.md](al-review-code.prompt.md) | Review and refactor AL code for quality, security, performance, and maintainability | Claude Sonnet 4.5 |
-| [al-unit-tests.prompt.md](al-unit-tests.prompt.md) | Generate unit tests for AL procedures with Given-When-Then structure | Claude Sonnet 4.5 |
+| [al-refactor-code.prompt.md](al-refactor-code.prompt.md) | Review and refactor AL code for quality, security, performance, and maintainability | Claude Sonnet 4.6 |
+| [al-review-code.prompt.md](al-review-code.prompt.md) | Review AL code for quality, security, performance, and maintainability | Claude Sonnet 4.6 |
+| [al-unit-tests.prompt.md](al-unit-tests.prompt.md) | Generate unit tests for AL procedures with Given-When-Then structure | Claude Sonnet 4.6 |
 
 ## Quick Start
 
@@ -76,7 +78,7 @@ Reviews and refactors AL code focusing on quality, security, performance, and ma
 
 **File:** `al-review-code.prompt.md`
 
-Reviews and refactors AL code focusing on quality, security, performance, and maintainability.
+Reviews AL code focusing on quality, security, performance, and maintainability.
 
 **Review Areas:**
 - Reuse of existing Business Central objects
@@ -88,7 +90,7 @@ Reviews and refactors AL code focusing on quality, security, performance, and ma
 - Modular, testable design
 
 **Output includes:**
-- Refactored code block
+- Reviewed code block with identified issues
 - Summary of improvements by category
 - Assumptions made
 - Suggested next steps
@@ -138,4 +140,12 @@ Focus on: [Provided code text, file path, or folder path here]
 
 ## License
 
-MIT
+MIT License
+
+Copyright (c) 2026 Milos Baic
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
